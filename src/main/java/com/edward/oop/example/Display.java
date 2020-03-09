@@ -2,26 +2,26 @@ package com.edward.oop.example;
 public class Display   
 {
     private int width;
-    public int getwidth() {
+    public int getWidth() {
         return width;
     }
 
-    public void setwidth(int value) {
+    public void setWidth(int value) {
         width = value;
     }
 
     private int height;
-    public int getheight() {
+    public int getHeight() {
         return height;
     }
 
-    public void setheight(int value) {
+    public void setHeight(int value) {
         height = value;
     }
 
     public Display(int width, int height) {
-        this.setwidth(width);
-        this.setheight(height);
+        this.setWidth(width);
+        this.setHeight(height);
     }
 
 }

@@ -9,16 +9,16 @@ abstract public class Computer   implements IPowerOn
         return powerController.isOn();
     }
 
-    public String getname() {
+    public String getName() {
         return name;
     }
 
-    public void setname(String value) {
+    public void setName(String value) {
         name = value;
     }
 
     public Computer(String name) {
-        this.setname(name);
+        this.setName(name);
         powerController = new PowerController();
     }
 

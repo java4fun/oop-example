@@ -4,11 +4,11 @@ public class Laptop  extends Computer implements ISleep
 {
     private ISleep sleepController;
     private Display display;
-    public Display getdisplay() {
+    public Display getDisplay() {
         return display;
     }
 
-    public void setdisplay(Display value) {
+    public void setDisplay(Display value) {
         display = value;
     }
 
@@ -18,7 +18,7 @@ public class Laptop  extends Computer implements ISleep
 
     public Laptop(String name, int width, int height) {
         super(name);
-        setdisplay(new Display(width,height));
+        setDisplay(new Display(width,height));
         sleepController = new SleepController();
     }
 

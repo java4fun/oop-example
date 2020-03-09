@@ -13,21 +13,21 @@ public class Desktop  extends Computer implements ISleep
     }
 
     private CaseType caseType = CaseType.Tower;
-    public CaseType getcaseType() {
+    public CaseType getCaseType() {
         return caseType;
     }
 
-    public void setcaseType(CaseType value) {
+    public void setCaseType(CaseType value) {
         caseType = value;
     }
 
-    public String getname() {
-        return super.getname() + " " + getcaseType();
+    public String getName() {
+        return super.getName() + " " + getCaseType();
     }
 
     public Desktop(String name, CaseType caseType) {
         super(name);
-        this.setcaseType(caseType);
+        this.setCaseType(caseType);
         sleepController = new SleepController();
     }
 

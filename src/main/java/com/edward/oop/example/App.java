@@ -16,7 +16,7 @@ public class App
         System.out.println("Computer Type - " + comp.getClass());
         Boolean isComputer = comp instanceof Computer;
         System.out.println("Is computer - " + isComputer);
-        System.out.println("Computer name - " + comp.getname());
+        System.out.println("Computer name - " + comp.getName());
         //Console.WriteLine("Computer case - " + comp.caseType);
         comp.togglePower();
         System.out.println("Computer is on - " + comp.isOn());

@@ -2,7 +2,7 @@ package com.edward.oop.example;
 
 public interface ISleep   
 {
-    boolean getisSleeping() throws Exception ;
+    boolean isSleeping() throws Exception ;
 
     void toggleSleep() throws Exception ;
 

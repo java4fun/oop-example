@@ -4,17 +4,17 @@ package com.edward.oop.example;
 abstract public class Computer   implements IPowerOn
 {
     protected IPowerOn powerController;
-    protected String _name = "Unknown";
-    public boolean getisOn() throws Exception {
-        return powerController.getisOn();
+    protected String name = "Unknown";
+    public boolean isOn() throws Exception {
+        return powerController.isOn();
     }
 
     public String getname() throws Exception {
-        return _name;
+        return name;
     }
 
     public void setname(String value) throws Exception {
-        _name = value;
+        name = value;
     }
 
     public Computer(String name) throws Exception {

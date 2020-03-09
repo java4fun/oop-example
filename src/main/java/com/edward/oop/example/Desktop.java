@@ -8,17 +8,17 @@ public class Desktop  extends Computer implements ISleep
         Tower,
         MiniTower
     }
-    public boolean getisSleeping() throws Exception {
-        return sleepController.getisSleeping();
+    public boolean isSleeping() throws Exception {
+        return sleepController.isSleeping();
     }
 
-    private CaseType __caseType = CaseType.Tower;
+    private CaseType caseType = CaseType.Tower;
     public CaseType getcaseType() {
-        return __caseType;
+        return caseType;
     }
 
     public void setcaseType(CaseType value) {
-        __caseType = value;
+        caseType = value;
     }
 
     public String getname() throws Exception {
@@ -32,7 +32,7 @@ public class Desktop  extends Computer implements ISleep
     }
 
     public void toggleSleep() throws Exception {
-        if (!getisOn())
+        if (!isOn())
         {
             return ;
         }
@@ -41,7 +41,7 @@ public class Desktop  extends Computer implements ISleep
     }
 
     public void togglePower() throws Exception {
-        if (getisSleeping())
+        if (isSleeping())
         {
             return ;
         }

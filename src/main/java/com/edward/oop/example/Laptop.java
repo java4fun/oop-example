@@ -3,17 +3,17 @@ package com.edward.oop.example;
 public class Laptop  extends Computer implements ISleep
 {
     private ISleep sleepController;
-    private Display __display;
+    private Display display;
     public Display getdisplay() {
-        return __display;
+        return display;
     }
 
     public void setdisplay(Display value) {
-        __display = value;
+        display = value;
     }
 
-    public boolean getisSleeping() throws Exception {
-        return sleepController.getisSleeping();
+    public boolean isSleeping() throws Exception {
+        return sleepController.isSleeping();
     }
 
     public Laptop(String name, int width, int height) throws Exception {

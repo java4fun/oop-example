@@ -19,14 +19,14 @@ public class App
         System.out.println("Computer name - " + comp.getname());
         //Console.WriteLine("Computer case - " + comp.caseType);
         comp.togglePower();
-        System.out.println("Computer is on - " + comp.getisOn());
+        System.out.println("Computer is on - " + comp.isOn());
         ISleep sleepingComp = comp instanceof ISleep ? (ISleep)comp : (ISleep)null;
         if (sleepingComp != null)
         {
             sleepingComp.toggleSleep();
-            System.out.println("Computer is sleeping - " + sleepingComp.getisSleeping());
+            System.out.println("Computer is sleeping - " + sleepingComp.isSleeping());
             comp.togglePower();
-            System.out.println("Computer is on - " + comp.getisOn());
+            System.out.println("Computer is on - " + comp.isOn());
         }
          
     }

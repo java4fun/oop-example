@@ -1,22 +1,22 @@
 package com.edward.oop.example;
 public class Display   
 {
-    private int __width;
+    private int width;
     public int getwidth() {
-        return __width;
+        return width;
     }
 
     public void setwidth(int value) {
-        __width = value;
+        width = value;
     }
 
-    private int __height;
+    private int height;
     public int getheight() {
-        return __height;
+        return height;
     }
 
     public void setheight(int value) {
-        __height = value;
+        height = value;
     }
 
     public Display(int width, int height) throws Exception {

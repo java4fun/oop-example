@@ -2,25 +2,25 @@ package com.edward.oop.example;
 
 public class PowerController   implements IPowerOn
 {
-    private boolean __isOn;
-    public boolean getisOn() {
-        return __isOn;
+    private boolean isOn;
+    public boolean isOn() {
+        return isOn;
     }
 
-    public void setisOn(boolean value) {
-        __isOn = value;
+    private void setIsOn(boolean value) {
+        isOn = value;
     }
 
     protected void turnOn() throws Exception {
-        setisOn(true);
+        setIsOn(true);
     }
 
     protected void turnOff() throws Exception {
-        setisOn(false);
+        setIsOn(false);
     }
 
     public void togglePower() throws Exception {
-        if (getisOn())
+        if (isOn())
         {
             turnOff();
         }

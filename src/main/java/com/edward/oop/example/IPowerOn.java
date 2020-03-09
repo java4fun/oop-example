@@ -2,9 +2,9 @@ package com.edward.oop.example;
 
 public interface IPowerOn   
 {
-    boolean isOn() throws Exception ;
+    boolean isOn();
 
-    void togglePower() throws Exception ;
+    void togglePower();
 
 }
 

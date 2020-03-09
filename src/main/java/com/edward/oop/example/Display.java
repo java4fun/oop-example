@@ -19,7 +19,7 @@ public class Display
         height = value;
     }
 
-    public Display(int width, int height) throws Exception {
+    public Display(int width, int height) {
         this.setwidth(width);
         this.setheight(height);
     }

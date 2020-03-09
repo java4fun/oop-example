@@ -11,15 +11,15 @@ public class PowerController   implements IPowerOn
         isOn = value;
     }
 
-    protected void turnOn() throws Exception {
+    protected void turnOn() {
         setIsOn(true);
     }
 
-    protected void turnOff() throws Exception {
+    protected void turnOff() {
         setIsOn(false);
     }
 
-    public void togglePower() throws Exception {
+    public void togglePower() {
         if (isOn())
         {
             turnOff();

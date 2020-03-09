@@ -11,7 +11,7 @@ public class SleepController   implements ISleep
         isSleeping = value;
     }
 
-    public void toggleSleep() throws Exception {
+    public void toggleSleep() {
         setIsSleeping(!isSleeping());
     }
 

@@ -5,24 +5,24 @@ abstract public class Computer   implements IPowerOn
 {
     protected IPowerOn powerController;
     protected String name = "Unknown";
-    public boolean isOn() throws Exception {
+    public boolean isOn() {
         return powerController.isOn();
     }
 
-    public String getname() throws Exception {
+    public String getname() {
         return name;
     }
 
-    public void setname(String value) throws Exception {
+    public void setname(String value) {
         name = value;
     }
 
-    public Computer(String name) throws Exception {
+    public Computer(String name) {
         this.setname(name);
         powerController = new PowerController();
     }
 
-    public void togglePower() throws Exception {
+    public void togglePower() {
         powerController.togglePower();
     }
 

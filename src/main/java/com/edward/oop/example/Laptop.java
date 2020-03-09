@@ -12,17 +12,17 @@ public class Laptop  extends Computer implements ISleep
         display = value;
     }
 
-    public boolean isSleeping() throws Exception {
+    public boolean isSleeping() {
         return sleepController.isSleeping();
     }
 
-    public Laptop(String name, int width, int height) throws Exception {
+    public Laptop(String name, int width, int height) {
         super(name);
         setdisplay(new Display(width,height));
         sleepController = new SleepController();
     }
 
-    public void toggleSleep() throws Exception {
+    public void toggleSleep() {
         sleepController.toggleSleep();
     }
 
